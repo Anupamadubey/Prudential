@@ -1,5 +1,15 @@
+com\prudential\assignment\CarRental\Entity\Reservation.class
+com\prudential\assignment\CarRental\Controller\AccountController.class
 com\prudential\assignment\CarRental\Entity\Account.class
-com\prudential\assignment\CarRental\Entity\Person.class
-com\prudential\assignment\CarRental\Controller\Test.class
+com\prudential\assignment\CarRental\Entity\CarType.class
+com\prudential\assignment\CarRental\Controller\ReservationController.class
+com\prudential\assignment\CarRental\Controller\CarController.class
 com\prudential\assignment\CarRental\Entity\AccountType.class
+com\prudential\assignment\CarRental\DAO\CarRepository.class
+com\prudential\assignment\CarRental\Service\ReservationService.class
+com\prudential\assignment\CarRental\DAO\AccountRepository.class
+com\prudential\assignment\CarRental\Service\CarService.class
+com\prudential\assignment\CarRental\DAO\ReservationRepository.class
 com\prudential\assignment\CarRental\CarRentalApp.class
+com\prudential\assignment\CarRental\Service\AccountService.class
+com\prudential\assignment\CarRental\Entity\Car.class
