@@ -17,6 +17,7 @@ public class Reservation {
 	private Date returnDateTime;
 	private Integer carId;
 	private Integer accountId;
+	private String status;
 	
 	public Integer getReservationId() {
 		return reservationId;
@@ -53,6 +54,13 @@ public class Reservation {
 	}
 	public void setAccountId(Integer accountId) {
 		this.accountId = accountId;
+	}
+	
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	}
 	@Override
 	public String toString() {

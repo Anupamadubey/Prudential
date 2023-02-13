@@ -21,15 +21,9 @@ public class ReservationController {
 	@Autowired
 	private ReservationService reservationService;
 	
-	@GetMapping("/sget/reservation/{id}")
+	@GetMapping("/get/reservation/{id}")
 	public Optional<Reservation> getReservationById(@PathVariable  int id) {
 		return reservationService.getReservationById(id);
-	}
-	
-	
-	@PutMapping("/update/reservation/{id}")
-	public void updateReservation(@RequestBody Reservation Reservation, @PathVariable int id) {
-		reservationService.updateReservation(Reservation,id);
 	}
 	
 	@PostMapping("/create/reservation")
@@ -37,9 +31,14 @@ public class ReservationController {
 		reservationService.createReservation(Reservation);
 	}
 	
+	@PostMapping("/return/{id}")
+	public void retunReservedCar(@PathVariable int id) {
+		reservationService.returnCar(id);
+	}
+	
 	@DeleteMapping("/delete/reservation/{id}")
 	public void deleteReservation( @PathVariable int id) {
-		reservationService.deleteReservation(id);
+		reservationService.cancelReservation(id);
 	}
 	
 
